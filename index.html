@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="form.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/form.css">
+    <link rel="stylesheet" href="./style.css/util.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
-    <title>FormPage</title>
-  </head>
-  <body>
-     <div class="container-1">
-    <p class="head">Personal Details</p>
-    <div class="font">
-    <table class="line_up">
-      <tr>
-        <td class="l_box1">First Name<span style=color:red;>*</span><br><br><input type="text" name="text" placeholder="placeholder"></td>
-        <td class="r_box1">Last Name<span style=color:red;>*</span><br><br><input type="text" name="text" placeholder="placeholder"></td>
-      </tr>
-      <tr>
-        <td class="l-box2">Email<span style=color:red;>*</span><br><br><input type="email" name="email" placeholder="placeholder"></td>
-        <td class="r_box2">Mobile Number<span style=color:red;>*</span><br><br><input type="text" name="number" placeholder="placeholder"></td>
-      </tr>
-    </table>
-  </div> 
-     </div>
-      <div class="container-2">
-    <p class="head">Academic Details</p>
-    <div class="font">
-    <div class="acc_det">
-        <label for="college_name">College Name</label>
-        <input type="text" name="college_name" id="college_name" placeholder="placeholder"><br><br>
-        <label for="depart_name">Department Name</label>
-        <input type="text" name="dept_name" id="dept_name" placeholder="placeholder"><br><br>
-        <label for="roll_num">Roll Number</label>
-        <input type="text" name="roll_num" id="roll_num" placeholder="placeholder"><br><br>
-        <label class="optional" for="grad_yr">Graduating Year</label>
-        <input type="text" name="grad_yr" id="grad_yr" placeholder="placeholder">
+    <title>Form Page</title>
+</head>
+<body>
+    <form>
+    <div class="section">
+        <p class="head">Personal Details</p>
+    <div class="bar">
+        <label for="f-name" class="mt">First Name</label>
+        <label for="l-name" class="m-r mt">Last Name</label>
     </div>
-</div>
-</div>
-<div class="container-3">
-    <p class="head">Other Details </p>
-    <div class="font">
-    <div>
-        <label class="od_1" for="area_interest">Area of Interest</label>
-        <input type="text" name="area_interest" id="area_interest" placeholder="placeholder">
-        <label class="optional od1" for="hobby">Hobby</label>
-        <input type="text" name="hobby" id="hobby" placeholder="placeholder"><br><br>
+    <div class="bar">
+        <input type="text" name="f-name" class="ml" placeholder="Placeholder">
+        <input type="text" name="l-name" class="pl" placeholder="Placeholder">
     </div>
-    <div>
-        <label class="optional od_2" for="grad_yr">Graduating Year</label>
-        <input type="text" name="grad_yr" id="grad_yr" placeholder="placeholder">
-        <label class="optional od2" for="grad_yr">Graduating Year</label>
-        <input type="text" name="grad_yr" id="grad_yr"placeholder="placeholder">
+    <div class="bar">
+        <label for="email" class="mt">Email</label>
+        <label for="number" class="m-r mt">Mobile Number</label>
+    </div>
+    <div class="bar">
+        <input type="email" name="email" class="ml" placeholder="Placeholder">
+        <input type="text" name="number" class="pl" placeholder="Placeholder">
     </div>
     </div>
+    <div class="section">
+        <p class="head">Academic Details</p>
+        <div>
+            <label for="college">College Name</label>
+            <input type="text" name="college" placeholder="Placeholder">
+        </div>
+        <div class="sequence">
+            <label for="dept-name">Department Name</label>
+            <input type="text" name="dept-name" placeholder="Placeholder">
+        </div>
+        <div class="sequence">
+            <label class="optional"for="roll-no">Roll Number</label>
+            <input type="text" name="roll-no" placeholder="Placeholder">
+        </div>
+        <div class="sequence">
+            <label class="optional" for="grad-yr">Graduating Year</label>
+            <input type="text" name="grad-yr" placeholder="Placeholder">
+        </div>
     </div>
-   <div class="button_css font">
-    <a href="#">Edit</a>
-    <a href="#">Save</a>
-   </div>
-  </body>
+    <div class="section">
+        <p class="head">Other Details</p>
+        <div class="series">
+                <label for="area">Area of interest</label>
+                <input type="text" name="aof" placeholder="Placeholder">
+                <label class="optional align"for="hobby">Hobby</label>
+                <input class="hob" type="text" name="hob" placeholder="Placeholder">
+        </div>
+        <div class="series">
+                <label class="optional" for="grad-yr">Graduating Year</label>
+                <input type="text" name="grad-yr" placeholder="Placeholder">
+                <label class="optional align"for="grad-yr">Graduating Year</label>
+                <input type="text" name="grad-yr" placeholder="Placeholder">
+        </div>
+        </div>
+    </form>
+    <div class="btn">
+        <a href="#" class="edit">Edit</a>
+        <a href="#" class="save">Save</a>
+    </div>
+</body>
 </html>
